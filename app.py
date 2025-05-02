@@ -24,4 +24,4 @@ user_input = st.text_input("How do you feel today?")
 if user_input:  # ✅ check that it's not empty
     user_text = Vectorizer.transform([user_input])
     prediction = model.predict(user_text)
-    st.success(f"🧠 AI thinks you're feeling: **{prediction[0]}**")
+    st.success(f"🧠 MEL thinks you're feeling: **{prediction[0]}**")
